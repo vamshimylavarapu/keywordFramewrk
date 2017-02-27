@@ -1,0 +1,14 @@
+package com.xl.samples;
+
+public class Stringdemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str="vamshi    bsjsks    jdjbdjd   d   djdjnd   djdkd   didijidh  sidjijdnd";
+		String str1=str.replaceAll("\\s"," ");
+		System.out.println(str1);
+
+	}
+
+}

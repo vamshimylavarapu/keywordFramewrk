@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Primus Bank Suite" >
+<parameter name="browser" value="firefox"></parameter>
+<parameter name="os" value="windows"></parameter>
+  <test name="PrimusBankTest">
+    <classes>
+      <class name="com.PrimusBank.Tests.AdminLoginTest"/>
+    <class name="com.PrimusBank.Tests.BankerLoginTest"/>
+      <class name="com.PrimusBank.Tests.CustomerLogInTest"/>
+      <class name="com.PrimusBank.Tests.CreateBranchTest"/>
+      
+    </classes>
+    
+  </test> <!-- PrimusBankTest -->
+  <parameter name="browser" value="iexplore"></parameter>
+<parameter name="os" value="windows"></parameter>
+  <test name="PrimusBankTest2">
+    <classes>
+      <class name="com.PrimusBank.Tests.AdminLoginTest"/>
+    <class name="com.PrimusBank.Tests.BankerLoginTest"/>
+      <class name="com.PrimusBank.Tests.CustomerLogInTest"/>
+      <class name="com.PrimusBank.Tests.CreateBranchTest"/>
+      
+    </classes>
+    
+  </test> <!-- PrimusBankTest -->
+</suite> <!-- Primus Bank Suite -->

@@ -1,0 +1,124 @@
+
+
+<HTML>
+<head>
+<LINK href="styles.css" type="text/css" rel="stylesheet">
+<script LANGUAGE="Javascript" SRC="Images/calender.js"></script>
+<script src="jscal2.js"></script>
+<script src="en.js"></script>
+<link rel="stylesheet" type="text/css" href="jscal2.css" />
+</head>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+	function validate() {
+		 var temp = document.form1;
+		if (GenerateBill.BillNo.value == "") {
+			alert("Bill Number is mandatory");
+			return false;
+		}
+		var CustName = Frm.CustName.value;
+		if (CustName == "") {
+			alert("Customer Name is mandatory");
+			return false;
+		}
+		var Product = Frm.Product.value;
+		if (Product == "") {
+			alert("Product is mandatory");
+			return false;
+		}
+		var DateOfSale = Frm.DateOfSale.value;
+		if (DateOfSale == "") {
+			alert("DateOfSale is mandatory");
+			return false;
+		}
+		var Amount = Frm.Amount.value;
+		if (Amount == "") {
+			alert("Amount is mandatory");
+			return false;
+		}
+		return true;
+	}
+
+</SCRIPT>
+<body Class=SC>
+
+
+	<!-- To display Menu --Start -->
+	<script language="JavaScript1.2" src="coolfunctions.js"></script>
+	<script language="JavaScript1.2" src="coolmenus.js"></script>
+	<!-- To display Menu --End -->
+	<center>
+
+		<BR>
+		<BR>
+		<br>
+		<br> <FONT FACE="Century Gothic"> <FONT size="2"
+			color="blue" FACE="Century Gothic">
+
+				<FORM NAME="GenerateBill" ACTION="GenerateBill.jsp" METHOD="POST"
+					onsubmit="return validate()">
+
+
+					<TABLE Border=0 align=center>
+						<TR class=row_title ALIGN="center">
+							<TH COLSPAN="2">GenerateBill</TH>
+						</TR>
+
+						<TR class=row_even>
+							<TD>BillNo *</TD>
+							<TD><input TYPE=text name=BillNo size="10"></TD>
+						</TR>
+						<TR class=row_odd>
+							<TD>CustName *</TD>
+							<TD><input TYPE=text name=CustName size="20"></TD>
+						</TR>
+						<TR class=row_even>
+							<TD>Product *</TD>
+							<TD><input TYPE=text name=Product size="20"></TD>
+						</TR>
+						<TR class="row_odd">
+							<TD>DateOfSale *</TD>
+							<TD><input size=20 readonly id="DateOfSale"
+								name="DateOfSale"> <img id="imgDate"
+								style="CURSOR: hand" height="16" src="Images/CalDis.gif"
+								width="16" border="0" name="imgDate"
+								onMouseOver="fnEnableCalLookup(this)"
+								onMouseOut="fnDisableCalLookup(this)"></TD>
+
+						</TR>
+
+						<TR class="row_even">
+							<TD>Amount *</TD>
+							<TD><input TYPE=text name=Amount size="20"></TD>
+						</TR>
+						<TR class=row_odd>
+							<TD><INPUT TYPE=submit name=submit value="Submit"></TD>
+							<TD><INPUT TYPE=reset name=resett value="Reset"></TD>
+						</TR>
+					</TABLE>
+
+
+				</FORM> <script type="text/javascript">
+					//<![CDATA[
+
+					var cal = Calendar.setup({
+						onSelect : function(cal) {
+							cal.hide()
+						},
+						showTime : true
+					});
+					cal.manageFields("imgDate", "DateOfSale", "%d/%m/%Y");
+					/*   cal.manageFields("f_btn1", "f_date1", "%Y-%m-%d %I:%M %p"); */
+					/*   cal.manageFields("f_btn2", "f_date2", "%b %e, %Y %I:%M %p");
+					  cal.manageFields("f_btn3", "f_date3", "%e %B %Y %I:%M %p");
+					  cal.manageFields("f_btn4", "f_date4", "%A, %e %B, %Y %I:%M %p");
+					 */
+					//]]>
+				</script>
+</BODY>
+</HTML>
+
+
+
+

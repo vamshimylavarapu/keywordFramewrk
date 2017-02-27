@@ -1,0 +1,25 @@
+package com.mavenproject;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+import org.w3c.dom.DOMConfiguration;
+
+public class DemoMaven 
+{
+Logger log=Logger.getLogger(Demomaven.class);
+	
+@Test
+public void test1()
+{
+	DOMConfigurator.configure("log4j.xml");
+	WebDriver driver=new FirefoxDriver();
+	driver.get("www.google.com");
+	
+	
+}
+}
+
+

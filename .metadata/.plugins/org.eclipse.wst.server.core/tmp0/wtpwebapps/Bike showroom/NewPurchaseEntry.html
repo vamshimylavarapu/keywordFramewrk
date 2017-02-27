@@ -1,0 +1,94 @@
+  <HTML>
+  <HEAD>
+  	<LINK href="styles.css" type="text/css" rel="stylesheet">
+
+    <TITLE>New Purchase entry</TITLE>
+	<script LANGUAGE="Javascript" SRC="Images/calender.js"></script>
+	<SCRIPT LANGUAGE="JavaScript">
+	<!--
+	function check(){
+	var ProdID = document.NewPurchaseForm.ProdID.value;
+	var Stock = document.NewPurchaseForm.Stock.value;
+	var BillNo = document.NewPurchaseForm.BillNo.value;
+	var SundryCreditor = document.NewPurchaseForm.SundryCreditor.value;
+	var TIN = document.NewPurchaseForm.TIN.value;
+	var DOPurchase=document.NewPurchaseForm.DOPurchase.value;
+	var BillAmmount=document.NewPurchaseForm.DOPurchase.value;
+	var curDate = new Date();
+
+	if(ProdID==""||Stock==""||BillNo==""||SundryCreditor==""||TIN==""||BillAmmount==""||VATOnPurchase==""){
+		alert("All the fields are mandatory");
+		return false;
+	}
+	if(DOPurchase==""){
+			alert("Loading current date");
+			document.NewPurchaseForm.DOPurchase.value= curDate;
+	}
+	return true;
+	}
+
+	//-->
+	</SCRIPT>
+  </HEAD>
+  <body Class=SC>
+	<!-- To display Menu --Start -->
+	<script language="JavaScript1.2" src="coolfunctions.js"></script>
+	<script language="JavaScript1.2" src="coolmenus.js"></script>
+	<!-- To display Menu --End --><br><br><br>
+
+  <FORM NAME="NewPurchaseForm" onSubmit="return check()" action="NewPurchaseEntry.jsp">
+   <CENTER>
+<!--ProdID	Stock	BillNo	SundryCreditor	VATOnPurchases	TIN	DOPurchase -->
+
+   <TABLE BORDER="0" CELLSPACING="2"  CELLPADDING="2" >
+	   <TR class=row_title  ALIGN="center">
+	   <TH COLSPAN="2"> New Purchase entry </TH>
+	   </TR>
+	   <TR class=row_odd >
+	   <TD>ProdID *</TD>
+	   <TD><INPUT TYPE="TEXT" NAME="ProdID" SIZE="10" ></TD>
+	   </TR>
+	   <TR class=row_even >
+	   <TD>Quantity *</TD>
+	   <TD><INPUT TYPE="TEXT" NAME="Stock" SIZE="10"></TD>
+	   </TR>
+
+	   <TR class=row_odd >
+	   <TD>BillNo *</TD>
+	   <TD><INPUT TYPE="TEXT" NAME="BillNo" SIZE="30"></TD>
+	   </TR>
+	   <TR class=row_odd >
+	   <TD>DOPurchase * </TD>
+	   <TD><input size=20 readonly id="DOPurchase" name="DOPurchase">
+			<img onkeypress="fnCalendar(this)" id="imgDate" style="CURSOR: hand" onClick="fnCalendar(this)" height="16" src="Images/CalDis.gif" width="16" border="0" name="imgDate" onMouseOver="fnEnableCalLookup(this)" onMouseOut="fnDisableCalLookup(this)" >
+
+		</TD>
+	   </TR>
+	   <TR class=row_odd >
+	   <TD>Bill Ammount *</TD>
+	   <TD><INPUT TYPE="TEXT" NAME="BillAmmount" SIZE="30" ></TD>
+	   </TR>
+	   <TR class=row_odd >
+	   <TD>VAT on Purchases *</TD>
+	   <TD><INPUT TYPE="TEXT" NAME="VATOnPurchase" SIZE="30" ></TD>
+	   </TR>
+
+		<TR class=row_odd >
+			<TD>Sundry Creditor *</TD>
+			<TD><INPUT TYPE="TEXT" NAME="SundryCreditor"  SIZE="30"></TD>
+		</TR>
+		<TR class=row_even >
+			<TD>TIN *</TD>
+			<TD><INPUT TYPE="TEXT" NAME="TIN"   SIZE="30"></TD>
+		</TR>
+		<TR class=row_odd  ALIGN="CENTER">
+			<TD><INPUT TYPE="SUBMIT" VALUE="Add" ></TD>
+			<TD><INPUT TYPE="RESET" VALUE="Reset"></TD>
+		</TR>
+
+   </TABLE>
+   </CENTER>
+   </FORM>
+   
+</BODY> 
+   </HTML>

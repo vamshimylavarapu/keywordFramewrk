@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="57062" started-at="2017-02-17T10:59:35Z" finished-at="2017-02-17T11:00:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="57062" started-at="2017-02-17T10:59:35Z" finished-at="2017-02-17T11:00:32Z">
+      <class name="com.project.tests.Keywordtest2">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.project.tests.Keywordtest2@39c8dc85]" name="launchApp" is-config="true" duration-ms="3181" started-at="2017-02-17T16:29:32Z" finished-at="2017-02-17T16:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="keywordLogintest()[pri:0, instance:com.project.tests.Keywordtest2@39c8dc85]" name="keywordLogintest" duration-ms="57045" started-at="2017-02-17T16:29:35Z" finished-at="2017-02-17T16:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keywordLogintest -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.project.tests.Keywordtest2@39c8dc85]" name="closeApp" is-config="true" duration-ms="14" started-at="2017-02-17T16:30:32Z" finished-at="2017-02-17T16:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.project.tests.Keywordtest2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

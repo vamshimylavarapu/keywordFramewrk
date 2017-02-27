@@ -1,0 +1,38 @@
+package com.xl.samples;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.mysql.jdbc.Statement;
+
+public class Databasesample 
+{
+
+	public static void main(String args[]) throws ClassNotFoundException, SQLException
+	{
+	
+		//Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+		//Connection con=DriverManager.getConnection("jdbc:mysql://qedgetech.com:3306/qedge_ohrm1", "qedgehrm","12345");
+		Connection con=DriverManager.getConnection("jdbc:sqlserver://primusbank.qedgetech.com:1433;database=bankdb","sa","Admin@4321");
+		
+		System.out.println("data base present");
+		Statement st=(Statement) con.createStatement();
+		//ResultSet rs=st.executeQuery("select max(emp_number) from hs_hr_employee");
+		ResultSet rs=st.executeQuery("select max(branchid) from bankbranches");
+		System.out.println(rs);
+		while(rs.next())
+		{
+			System.out.println(rs.getInt(1));
+			
+		}
+		
+		
+		
+		
+		
+		
+	}
+}

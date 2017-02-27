@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;XLutils.java&apos; to &apos;XLbasedexamples/src/com.xl.samples&apos;&#x0D;&#x0A;- Original project: &apos;PrimusBank&apos;&#x0D;&#x0A;- Destination element: &apos;XLbasedexamples/src/com.xl.samples&apos;&#x0D;&#x0A;- Original element: &apos;com.utils.XLutils.java&apos;" description="Copy compilation unit" destination="=XLbasedexamples/src&lt;com.xl.samples" element1="/src&lt;com.utils{XLutils.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1486712853795" units="1" version="1.0"/>
+</session>

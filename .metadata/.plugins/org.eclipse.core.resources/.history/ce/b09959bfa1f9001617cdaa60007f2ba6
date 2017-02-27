@@ -1,0 +1,22 @@
+package com.mavenproject;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Countwebelements {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://primusbank.qedgetech.com");
+		int sample=driver.findElements(By.xpath("//*")).size();
+		System.out.println(sample);
+	}
+
+}

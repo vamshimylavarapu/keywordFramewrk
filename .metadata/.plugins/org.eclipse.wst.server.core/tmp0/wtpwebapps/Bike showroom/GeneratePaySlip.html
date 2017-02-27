@@ -1,0 +1,109 @@
+
+
+<HTML>
+<head>
+	<LINK href="styles.css" type="text/css" rel="stylesheet">
+<script src="jscal2.js"></script>
+<script src="en.js"></script>
+<link rel="stylesheet" type="text/css" href="jscal2.css" />
+
+  
+
+</head>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function validate(){
+ x = document.NewUser.uid;
+ y = document.NewUser.pwd;
+ z = document.NewUser.auth;
+ var ed=x.value;
+ var pattern = /^([0-9]{1,12})$/;
+ if(!(pattern.test(ed)))
+ {
+	alert("Invalid Employee number");
+    return false;
+ }
+ else
+    return true;
+
+}
+//-->
+</SCRIPT>
+<script LANGUAGE="Javascript" SRC="Images/calender.js"></script>
+
+<body Class=SC>
+
+<!-- To display Menu --Start -->
+<script language="JavaScript1.2" src="coolfunctions.js"></script>
+<script language="JavaScript1.2" src="coolmenus.js"></script>
+<!-- To display Menu --End -->
+<center>
+
+<BR><BR><br><br>
+<FONT FACE="Century Gothic">
+
+
+
+<FONT size="2" color="blue" FACE="Century Gothic">
+
+<FORM NAME="NewUser" ACTION="GeneratePaySlip.jsp" METHOD="POST" onsubmit="return validate()">
+
+
+<TABLE Border=0 align=center>
+<TR class=row_title ALIGN="center">
+	   <TH COLSPAN="2"> Generate Payslip</TH>
+</TR>
+
+<TR class=row_even>
+	<TD>Employee Number * </TD>
+	<TD><input TYPE=text name=EMPNO size="15" required="required"></TD>
+</TR>
+<TR class=row_ODD>
+<tD>From</tD>
+<tD nowrap>
+<input size=20 readonly id="Start" name="Start">
+<img  id="imgDate" style="CURSOR: hand"  height="16" src="Images/CalDis.gif" width="16" border="0" name="imgDate" onMouseOver="fnEnableCalLookup(this)" onMouseOut="fnDisableCalLookup(this)"  required="required" >
+</tD>
+</TR>
+<TR class=row_even>
+<tD>To</tD>
+<tD nowrap>
+<input size=20 readonly id="End" name="End">
+<img  id="imgDate1" style="CURSOR: hand"  height="16" src="Images/CalDis.gif" width="16" border="0" name="imgDate1" onMouseOver="fnEnableCalLookup(this)" onMouseOut="fnDisableCalLookup(this)" required="required" >
+</tD>
+</TR>
+
+<TR class=row_odd>
+	<Th><INPUT TYPE=submit name=submit value="Generate Payslip"></Th>
+	<Th><INPUT TYPE=reset name=resett value="Reset" > </Th>
+</TR>
+</TABLE>
+
+
+</FORM>
+<script type="text/javascript">
+		//<![CDATA[
+
+		var cal = Calendar.setup({
+			onSelect : function(cal) {
+				cal.hide()
+			},
+			showTime : true
+		});
+		cal.manageFields("imgDate", "Start", "%d/%m/%Y");
+		cal.manageFields("imgDate1", "End", "%d/%m/%Y");
+		
+		/*   cal.manageFields("f_btn1", "f_date1", "%Y-%m-%d %I:%M %p"); */
+		/*   cal.manageFields("f_btn2", "f_date2", "%b %e, %Y %I:%M %p");
+		  cal.manageFields("f_btn3", "f_date3", "%e %B %Y %I:%M %p");
+		  cal.manageFields("f_btn4", "f_date4", "%A, %e %B, %Y %I:%M %p");
+		 */
+		//]]>
+	</script>
+   
+</BODY>
+</HTML>
+
+
+
+

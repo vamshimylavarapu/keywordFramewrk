@@ -1,0 +1,14 @@
+127.0.0.1 - - [23/Feb/2017:15:04:54 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:04:57 +0530] "GET /Integrated_data_about_bike_showroom/Login.jsp HTTP/1.1" 200 955
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:22:00 +0530] "GET /Integrated_data_about_bike_showroom/Login.jsp HTTP/1.1" 200 955
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:22:00 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:22:00 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:22:10 +0530] "POST /Integrated_data_about_bike_showroom/Validate.jsp HTTP/1.1" 200 1062
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:22:47 +0530] "POST /Integrated_data_about_bike_showroom/Validate.jsp HTTP/1.1" 200 479
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:22:48 +0530] "GET /Integrated_data_about_bike_showroom/Report.jsp HTTP/1.1" 200 988
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:23:07 +0530] "GET /Integrated_data_about_bike_showroom/AddEmployee0.jsp HTTP/1.1" 200 3828
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:23:07 +0530] "GET /Integrated_data_about_bike_showroom/jscal2.js HTTP/1.1" 200 32525
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:23:07 +0530] "GET /Integrated_data_about_bike_showroom/Images/calender.js HTTP/1.1" 200 721
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:23:07 +0530] "GET /Integrated_data_about_bike_showroom/en.js HTTP/1.1" 200 1321
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:23:07 +0530] "GET /Integrated_data_about_bike_showroom/jscal2.css HTTP/1.1" 200 7385
+0:0:0:0:0:0:0:1 - - [23/Feb/2017:15:23:07 +0530] "GET /Integrated_data_about_bike_showroom/Images/CalDis.gif HTTP/1.1" 200 940

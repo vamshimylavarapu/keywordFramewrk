@@ -1,0 +1,68 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Monthly Purchases</TITLE>
+	<LINK href="styles.css" type="text/css" rel="stylesheet">
+<script src="jscal2.js"></script>
+<script src="en.js"></script>
+<link rel="stylesheet" type="text/css" href="jscal2.css" />
+
+<script LANGUAGE="Javascript" SRC="Images/calender.js"></script>
+<script language="Javascript" src="Images/validate.js"></script>
+</HEAD>
+
+<BODY>
+
+
+<!-- To display Menu --Start -->
+<script language="JavaScript1.2" src="coolfunctions.js"></script>
+<script language="JavaScript1.2" src="coolmenus.js"></script>
+<!-- To display Menu --End -->
+<br><br><br><br><br><br>
+<H2 align=center> Monthly Purchases</H2>
+
+<center>
+<form name="calform" action="MPurchases.jsp" onsubmit="return validatePeriod(Start,End)" >
+<Table class=notebook>
+<TR class="row_odd">
+<TH>Start Date</TH>
+<TD>
+<input type=text name="Start" id="Start" size=15><img  id="imgDate" style="CURSOR: hand"  height="16" src="Images/CalDis.gif" width="16" border="0" name="imgDate" onMouseOver="fnEnableCalLookup(this)" onMouseOut="fnDisableCalLookup(this)" >
+</TD>
+</TR>
+<TR class="row_odd">
+<TH>End Date</TH>
+<TD>
+<input type=text name="End" id="End" size=15><img id="imgDate1" style="CURSOR: hand" height="16" src="Images/CalDis.gif" width="16" border="0" name="imgDate1" onMouseOver="fnEnableCalLookup(this)" onMouseOut="fnDisableCalLookup(this)" >
+</TD>
+<TR>
+<TD align=center><INPUT TYPE="submit" id=SUB Value="Get Results" ></TD>
+<TD align=center><INPUT id='RES' TYPE="RESET" onclick="location.reload()"></TD>
+</TR>
+</TABLE>
+</form>
+</center>
+
+ <script type="text/javascript">
+		//<![CDATA[
+
+		var cal = Calendar.setup({
+			onSelect : function(cal) {
+				cal.hide()
+			},
+			showTime : true
+		});
+		cal.manageFields("imgDate", "Start", "%d/%m/%Y");
+		
+		cal.manageFields("imgDate1", "End", "%d/%m/%Y");
+		
+		/*   cal.manageFields("f_btn1", "f_date1", "%Y-%m-%d %I:%M %p"); */
+		/*   cal.manageFields("f_btn2", "f_date2", "%b %e, %Y %I:%M %p");
+		  cal.manageFields("f_btn3", "f_date3", "%e %B %Y %I:%M %p");
+		  cal.manageFields("f_btn4", "f_date4", "%A, %e %B, %Y %I:%M %p");
+		 */
+		//]]>
+	</script>
+</BODY>
+
